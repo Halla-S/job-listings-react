@@ -1,31 +1,60 @@
-.App {
+body {
+  background: rgb(164, 173, 189);
+}
+
+h2 {
   text-align: center;
+  margin-left: 0;
 }
 
-.myDiv{
-display: flex;
-flex-direction: column;
-}
-.cardDiv{
+.myDiv {
   display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.cardDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   flex-direction: row;
-  border-style: solid;
-  border-color: blueviolet;
+  background: cornsilk;
+
+  border-radius: 8px;
+  text-align: justify;
+  align-items: center;
+  margin: 1% 0;
 }
 
-.sectionOne{
-
-}
-.sectionTwo{
-
-}
-.sectionThree{
-
-}
-li{
+li {
   display: inline-block;
-  margin:2em;
+  margin: 2em;
 }
-ul{
-list-style-type: none;  
+ul {
+  list-style-type: none;
+}
+.section1 {
+  width: 10%;
+  /* text-align: center; */
+}
+img {
+  margin-left: 20%;
+}
+.featured {
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+.new {
+  background: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+.section3 li:hover {
+  background: crimson;
+  padding: 1rem;
+  border-radius: 8px;
 }

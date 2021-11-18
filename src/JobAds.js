@@ -7,14 +7,18 @@ const JobAds = (props) => {
       {props.data.map((element, index) => {
         return (
           <div className="cardDiv">
-            <section className="sectionOne">
+            <section className="section1">
               <img src={element.logo} alt=" " />
             </section>
-            <section className="sectionTwo">
+            <section className="section2">
               <ul>
                 <li key={1}>{element.company}</li>
-                <li key={2} className="new">{element.new === true ? "new" : ""}</li>
-                <li key={3} className="featured">{element.featured === true ? "featured" : ""}</li>
+                <li key={2} className={element.new ? "new" : "none"}>
+                  {element.new === true ? "NEW" : ""}
+                </li>
+                <li key={3} className={element.featured ? "featured" : "none"}>
+                  {element.featured === true ? "FEATURED" : ""}
+                </li>
               </ul>
               <h2>{element.position}</h2>
               <ul>
@@ -23,7 +27,7 @@ const JobAds = (props) => {
                 <li key={2 + index}>{element.location}</li>
               </ul>
             </section>
-            <section className="sectionThree">
+            <section className="section3">
               <ul>
                 <li key={index}>{element.role}</li>
                 <li key={1 + index}>{element.level}</li>
